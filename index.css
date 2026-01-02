@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container{
+        width: 70%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        i{
+            font-size: 20px;
+        }
+    }
+}
+main{
+    width: 100%;
+    height: 120vh;
+    .overlay{
+        width: 100%;
+        height: 100%;
+        background-image: url(./pic/man.jpg);
+        /* background-size:contain; */
+        background-size:cover;
+        /* background-repeat: no-repeat; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container{
+        /* background-color: red; */
+        width: 70%;
+        height: 100%;
+        position: relative;
+        .box{
+            position: absolute;
+            border: 20px solid #fda802;
+            width: 35%;
+            height: 62%;
+            top: 80px;
+        }
+        .text{
+            position: absolute;
+            font-size: 45px;
+            font-weight: 700;
+            width: 40%;
+            background-color: #fff;
+            top: 25%;
+            left: 72px;
+            padding: 20px 0;
+        }
+    }
+}
+section{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container{
+        width: 70%;
+        height: 100%;
+        display: flex;
+        position: relative;
+        .left{
+            width: 60%;
+            position: absolute;
+            bottom: 0;
+            .about{
+                color: #fff;
+                background-color: #1948ff;
+                border-radius: 50px 20px;
+                -webkit-border-radius: 50px;
+                -moz-border-radius: 50px;
+                -ms-border-radius: 50px;
+                -o-border-radius: 50px;
+                width: 100px;
+                padding: 10px 5px;
+                text-align: center;
+                font-size: 12px;
+                font-weight: 700;
+                letter-spacing: 1px;            } 
+            .info{
+                font-family: "Open Sans";
+                width: 90%;
+                font-size: 18px;
+                margin-top: 30px;
+            }
+        } 
+        .right{
+            width: 40%;
+            position: absolute;
+            right: -70px;
+            top: -80px;
+            height: 100%;
+            .box{
+                border: 20px solid #1948ff;
+                height: 120%;
+                width: 90%;
+                background-color: #fff;
+            }
+            .text{
+            position: absolute;
+            font-size: 45px;
+            font-weight: 700;
+            width: 100%;
+            background-color: #fff;
+            top: 40%;
+            right: 100px;
+            padding: 50px 0;
+
+            }
+        }
+    }
+}
+/* Start Contact */
+.contact-us{
+    height: 35vh;
+    background-color: #fda802;
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container{
+        width: 75%;
+        background-color: #fff;
+        height: 60%;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .contact{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap:40px;
+            .icon{
+            background-color: #1948ff;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            i{color:#fff;font-size: 45px;}
+            }
+            .details{
+                h1{font-size: 45px;margin-bottom: 15px;}
+                p{
+                    font-size: 17px;
+                    a{
+                        text-decoration: none;
+                        font-weight: 700;
+                        color:#1948ff;
+                    }
+                }
+            }
+        }.book{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            button{
+                color: #fff;
+                font-weight: 500;
+                border: none;
+                letter-spacing: 1px;
+                background-color: #1948ff;
+                width: 100%;
+                padding: 20px 30px;
+                border-radius: 50px;
+                -webkit-border-radius: 50px;
+                -moz-border-radius: 50px;
+                -ms-border-radius: 50px;
+                -o-border-radius: 50px;
+                cursor: pointer;
+                &:hover{
+                    background-color: #fda802;
+                }
+}
+        }
+
+    }
+}
+/* End Contact */
+
+/* Start IT Solution */
+.it{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container{
+        width: 70%;
+        flex-direction: column;
+        gap:20px;
+        h1{ font-size: 50px;};
+        button{
+            border: none;
+            width: 14%;
+            color: #fff;
+            background-color: #1948ff;
+            border-radius: 50px;
+            padding: 15px 25px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 40px;
+        }
+        .info{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            .box{
+                width: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 30px;
+                h1 {
+                    font-family: "Ubuntu";
+                    color: #fff;
+                    border-radius: 50%;
+                    padding: 16px;
+                    font-size: 35px;
+                    margin-right: 50px;
+                }
+                .black{
+                    background-color: #333;
+                    }
+                .blue{
+                    background-color: #1948ff;
+                }
+                p{
+                    line-height: 30px;
+                    font-family: "Open Sans"
+                }
+            }
+        }
+    }
+}
+/* End IT Solution */
+
+/* Start Protofolio */
+.discription{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container{
+        width: 70%;
+        /* height: 100%; */
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        /* gap: 10px; */
+        .dis{
+            width: 25%;
+            p{font-size: 13px; margin: 20px 0;
+                a{
+                    color:#1948ff ;
+                    text-decoration: none;
+                    font-weight: 600;
+                }
+            }
+        }
+        .pic{
+            width: 25%;
+            img{
+                width:250px;
+                height: 250px;
+                object-fit: cover;
+            }
+        }
+        .dis2{
+            width: 25%;
+            p{  font-size: 15px;
+                margin-top: 50px;
+                font-family: "Open Sans";
+
+            }
+        }
+    }
+}
+/* End Protofolio */
+
+/* Start About */
+article{
+    height: 80vh;
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container{
+        width: 70%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .left{
+            width: 60%;
+            height: 100%;
+            position: relative;
+            .box{
+                position: absolute;
+                border: 20px solid #fda802;
+                width: 75%;
+                height: 100%;
+            }
+            .cover{
+               width: 85%;
+                height: 60%;
+                background-color: #fff;
+                box-shadow: 0px 0px 7px 0px #ccc;
+                position: absolute;
+                top: 20%;
+                left: 10%;
+                padding: 20px;
+                .pic{
+                    img{
+                        width: 200px;
+                        height: 200px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+                }h3{
+                    font-size: 25px;
+                    margin-top: 20px;
+                }
+            }
+        }
+        .right{
+            width: 40%;
+            margin-left: 50px;
+            button{
+                color: #fff;
+                background-color: #1948ff;
+                border-radius: 50px 20px;
+                -webkit-border-radius: 50px;
+                -moz-border-radius: 50px;
+                -ms-border-radius: 50px;
+                -o-border-radius: 50px;
+                width: 100px;
+                padding: 10px 5px;
+                text-align: center;
+                font-size: 12px;
+                font-weight: 700;
+                letter-spacing: 1px;
+                border:none
+            }
+            p{
+                font-family: "Open Sans";
+                width: 90%;
+                font-size: 18px;
+                margin-top: 30px;
+            }
+        }
+    }
+}
+/* End About */
+
+
+
+
+/* #fda802 orange */
+/* #1948ff  blue */
+/* #333333  black */
+/* font-family: "Open Sans" */
+/* font-family: "Ubuntu" */
